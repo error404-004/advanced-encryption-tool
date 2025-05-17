@@ -14,9 +14,12 @@ ADVANCED ENCRYPTION TOOL
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Advanced Encryption Tool
 
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/advanced_encryption_tool/python-package.yml?branch=main)](https://github.com/yourusername/advanced_encryption_tool/actions)
+## OUTPUT
+![Image](https://github.com/user-attachments/assets/48bfb500-153b-4b7d-b2bd-8da67061f3cb)
+
+![Image](https://github.com/user-attachments/assets/6b2eac9f-5120-473c-9206-969aa807ee13)
+
+![Image](https://github.com/user-attachments/assets/b4bf8c55-ebbc-4370-899d-35b560506087) 
 
 ---
 
@@ -55,7 +58,7 @@ This project is ideal for security-conscious users and organizations requiring e
 
 ### Using `pip`
 
-```bash
+bash
 pip install -r requirements.txt
 
 
@@ -81,24 +84,32 @@ Launch the GUI:
 python -m src.main
 
 Project Structure:
+📁 AET/
+├── __init__.py
+├── __init__1.py
+├── __init__2.py
+├── aes_gcm.py              # AES-GCM encryption engine
+├── aws_kms.py              # AWS KMS integration
+├── fips_validator.py       # FIPS compliance checks
+├── hsm_support.py          # HSM (Hardware Security Module) support
+├── interface.py            # Common interface for encryption engines
+├── main.py                 # Main CLI or entry point
 
-advanced_encryption_tool/
-│
-├── src/
-│   ├── main.py                # Entry point (CLI & GUI)
-│   └── encryption/            # Core encryption modules
-│       ├── aes_gcm.py
-│       ├── cloud_kms.py
-│       ├── hsm_support.py
-│       └── utils.py
-│   └── gui/                   # GUI interface components
-│       └── interface.py
-│
-├── tests/                     # Unit tests
-│
-├── requirements.txt
-├── setup.py
-└── README.md
+📄 .gitignore
+📄 pyproject.toml           # Project metadata and dependencies (if using Poetry)
+📄 README.md
+📄 requirements.txt         # List of Python dependencies
+📄 setup.py                 # Setup script for pip installation
+
+🧪 Tests
+├── test_aes_gcm.py         # Tests for AES-GCM functionality
+├── test_aws_kms.py         # Tests for AWS KMS module
+├── test_fips_validator.py  # Tests for FIPS validator
+├── test_hsm_support.py     # Tests for HSM support
+├── test_utils.py           # Tests for utilities
+
+🛠️ utils.py                 # Utility functions
+---
 
 Development & Testing
 Run all unit tests with:
