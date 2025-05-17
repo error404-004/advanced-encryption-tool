@@ -1,0 +1,7 @@
+pycryptodome>=3.17
+boto3>=1.26
+PyKCS11>=1.5
+PyQt6>=6.4
+pytest>=7.0
+pytest-cov>=4.0
+cryptography
