@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE/editor specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Pytest cache
+.pytest_cache/
+.cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+encryption_audit.log
+
+# Coverage reports
+.coverage
+htmlcov/
+.coverage.*
+
+# MyPy
+.mypy_cache/
+
+# PyCharm
+*.iml
+*.ipr
+*.iws
+
+# MacOS
+.DS_Store
+
+# AWS credentials (if any)
+.aws/
+
+# Sensitive files you don't want in repo
+*.pem
+*.key
